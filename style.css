@@ -10,15 +10,17 @@ body * {
 }
 
 body {
-    background-image: url(/assets/Fundo.png);
+    background-image: url(./assets/Fundo.png);
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #121214;
+    align-items: center;
+    padding: 60px  60px;
 }
 
 #container {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
 } 
@@ -46,6 +48,12 @@ ul {
 
 ul li img{
     border-radius: 8px;
+}
+
+.btn-seta {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 h1 {
