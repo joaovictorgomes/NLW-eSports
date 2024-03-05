@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+body {
+    background-image: url(/assets/Fundo.png);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#container img {
+    max-width: 100%; 
+    height: auto;
+    margin-top: 80px;
+}
+
+main {
+    margin: 80px 48px 132px;
+}
+
+section { 
+    color: white;
+}
+
+ul {
+    margin-top: 64px;
+    display: flex;
+    gap: 24px; 
+    list-style: none;
+}
+
+ul li img{
+    border-radius: 8px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 64px;
+    text-align: center;
+}
+
+.duo {
+    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+}
+
+p { 
+    color: #A1A1AA;
+}
+
+.TB {
+    display: flex;
+    flex-direction: row;
+}
+
+.texto {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.anuncio {
+    margin-top: 32px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+}
+
+.anuncio div {
+    background-color: #2A2634;
+    height: auto;
+    border-radius: 8px; 
+    padding: 24px 32px;
+    
+}
+
+.anuncio button {
+    display: flex;
+    align-items:center;  
+    justify-content: center;   
+    width:  193px;
+    height: 48px;
+
+    background-color: #8B5CF6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
