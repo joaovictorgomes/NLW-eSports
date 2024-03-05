@@ -39,11 +39,16 @@ section {
     color: white;
 }
 
+.list{
+    text-align: center;
+}
+
 ul {
-    margin-top: 64px;
+    margin: 64px 24px;
     display: flex;
-    gap: 24px; 
     list-style: none;
+    gap: 24px; 
+
 }
 
 ul li img{
