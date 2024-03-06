@@ -22,7 +22,7 @@
             <div>
                 <h1>Seu <span class="duo">duo</span> está aqui.</h1>
                 <ul class="list">
-                    <button class="btn-seta">
+                    <button id="prev-button" class="btn-seta">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g opacity="0.4">
                             <path d="M30 39L15 24L30 9" stroke="#A1A1AA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -33,7 +33,7 @@
                         <a 
                         target="_blank"
                         href="http://">
-                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/21779-188x250.jpg" alt="">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/21779-188x250.jpg" alt="" class="slider">
                         </a>
                     </li>
 
@@ -41,7 +41,7 @@
                         <a 
                         target="_blank"
                         href="http://">
-                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/516575-188x250.jpg" alt="">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/516575-188x250.jpg" alt="" class="slider">
                         </a>
                     </li>
 
@@ -49,7 +49,7 @@
                         <a 
                         target="_blank"
                         href="http://">
-                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg" alt="">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg" alt="" class="slider">
                         </a>
                     </li>
 
@@ -57,7 +57,7 @@
                         <a 
                         target="_blank"
                         href="http://">
-                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399-188x250.jpg" alt="">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399-188x250.jpg" alt="" class="slider">
                         </a>
                     </li>
                     
@@ -65,7 +65,7 @@
                         <a 
                         target="_blank"
                         href="http://">
-                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399-188x250.jpg" alt="">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399-188x250.jpg" alt="" class="slider">
                         </a>
                     </li>
 
@@ -73,7 +73,7 @@
                         <a 
                         target="_blank"
                         href="http://">
-                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399-188x250.jpg" alt="">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399-188x250.jpg" alt="" class="slider">
                         </a>
                     </li>
 
@@ -81,11 +81,10 @@
                         <a 
                         target="_blank"
                         href="http://">
-                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399-188x250.jpg" alt="">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399-188x250.jpg" alt="" class="slider">
                         </a>
                     </li>
-
-                    <button class="btn-seta">
+                    <button id="next-button" class="btn-seta">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18 9L33 24L18 39" stroke="#A1A1AA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>                            
@@ -105,12 +104,14 @@
                     <p>Publique um anúncio para encontrar novos players!</p>
                 </div>
                     <div class="botao">
-                <button> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.875 10.875H13.875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10.875 7.875V13.875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                             <path d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M16.4438 16.4437L21.0001 21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg> Publicar anúncio</button>
+                        <button> 
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.875 10.875H13.875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.875 7.875V13.875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.4438 16.4437L21.0001 21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>Publicar anúncio
+                        </button>
                 </div>
             </div>
 
@@ -118,5 +119,6 @@
 
     </main>
 
+    <script src="./script.js"></script>
 </body>
 </html>
