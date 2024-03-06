@@ -148,7 +148,7 @@ p {
 }
 
 .modal-container.mostrar {
-    display: none;
+    display: none; /*flex*/
 }
 
 .modal {
