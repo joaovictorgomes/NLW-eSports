@@ -131,3 +131,88 @@ p {
     border-radius: 6px;
     cursor: pointer;
 }
+
+/* Modal */
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    position: fixed;
+}
+
+.modal-container.mostrar {
+    display: none;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 476px;
+    height: 400px;
+    background: #2A2634;
+    border-radius: 10px;
+    position: relative;
+    font-size: 25px;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.modal-h1 {
+    color: #fff;
+    margin: 32px 0 16px 0;
+    font-size: 25px;
+}
+
+input[type="text"] {
+    width: 408px;
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.duas-ultimas-frases {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.duas-ultimas-frases input[type="text"] {
+    width: 192px;
+    margin-bottom: 0;
+}
+
+.modal-container, .modal, input[type="text"] {
+    outline: none;
+}
+
+.data-container {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    height: 80px;
+}
+
+.data-input {
+    margin-right: 8px;
+}
+
+.buttons-container button {
+    display: inline;
+    height: 80px;
+    width: 40px;
+    margin-right: 8px;
+    gap: 4px;
+}
+
+input[type="checkbox"] {
+    height: 80px;
+    width: 40px;
+    margin-right: 8px;
+}
