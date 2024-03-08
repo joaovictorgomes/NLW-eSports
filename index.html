@@ -105,7 +105,7 @@
                     <p>Publique um anúncio para encontrar novos players!</p>
                 </div>
                     <div class="botao">
-                        <button> 
+                        <button id="publiqueAnuncioBtn" class="imagem" data-target="#modalanuncio"> 
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.875 10.875H13.875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M10.875 7.875V13.875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -118,8 +118,8 @@
 
         </section>
 
-        <div id="modal-anuncio" class="modal-container">
-            <div class="modal mostrar">
+        <div id="modalanuncio" class="modal-container mostrar">
+            <div class="modal">
 
                 <div class="Publique">
                     <h1 class="modal-h1">Publique em um anúncio</h1>
@@ -128,9 +128,18 @@
                 <div class="todas-frases">
                     <div class="primeiras-frases">
                     <p class="paragrafo"> Qual o game?</p>
-                    <input type="text" name="" id="frase1" placeholder="Selecione o game que deseja jogar">
+                    <form >
+                        <select class="seletor"name="plataforma">
+                            <option value="" >Selecione o game que deseja jogar</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                            <option value="">#</option>
+                        </select>
+                    </form>
                     <p class="paragrafo"> Seu nome (ou nickname)</p>
-                    <input type="text" name="" id="frase2" placeholder="Como te chamam dentro do game?">
+                    <input type="text" name="" id="frase" class="texto" placeholder="Como te chamam dentro do game?">
                     </div>
                 </div>
                     
@@ -138,11 +147,11 @@
                     <div class="segunda-frases">
                       <div class="item-frase">
                         <p class="paragrafo"> Tudo bem ser ZERO</p>
-                        <input type="text" name="" id="frase3" placeholder="Tudo bem ser ZERO">
+                        <input type="text" name="" id="frase" placeholder="Tudo bem ser ZERO">
                       </div>
                       <div class="item-frase">
                         <p class="paragrafo"> Qual seu Discord</p>
-                        <input type="text" name="" id="frase4" placeholder="Usario#0000">
+                        <input type="text" name="" id="frase" placeholder="Usario#0000">
                       </div>
                     </div>
                 </div>
@@ -154,11 +163,11 @@
                     <div class="semana-date">
                         <div class="semana-data">
                             <div class="buttons-semanas">
-                                <button>S</button>
-                                <button>T</button>
-                                <button>Q</button>
-                                <button>Q</button>
-                                <button>S</button>
+                                <button class="dia">S</button>
+                                <button class="dia">T</button>
+                                <button class="dia">Q</button>
+                                <button class="dia">Q</button>
+                                <button class="dia">S</button>
                             </div>
                         </div>
                     </div>
@@ -166,8 +175,8 @@
                     <div class="data-container">
                        
                         <div class="data-input-container">
-                            <input type="text" name="" class="data-input" placeholder="De">
-                            <input type="text" name="" class="data-input" placeholder="Até">
+                            <input type="text" name="" id="frase" class="data-input" placeholder="De">
+                            <input type="text" name="" id="frase" class="data-input" placeholder="Até">
                         </div>
                     </div>
                 </div>
@@ -179,9 +188,9 @@
                         Costumo me conectar ao chat de voz</label>
                 </div>
 
-                    <div>
-                        <button>Cancelar</button>
-                        <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="btn-cancelar-dou">
+                        <button class="cancelar">Cancelar</button>
+                        <button class="encotrar"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.25 10.125H17.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M6.75 10.125H9.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M8.25 8.625V11.625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -195,10 +204,6 @@
                 </div>
             </div>
         </div>
-        
-                
-                
-
     </main>
 
     <script src="./script.js"></script>

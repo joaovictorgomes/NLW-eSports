@@ -148,16 +148,18 @@ p {
 
 .modal-container {
     color: white;
-    background:rgba(0, 0, 0, .5);
-    width: 100vw;
-    height: 100vh;
     position: fixed;
-    top: 0px;
-    left: 0px;
     z-index: 2000;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+}
+
+.modal-container .mostrar {
+    display: flex;
 }
 
 .modal {
@@ -168,8 +170,24 @@ p {
     padding: 32px 40px;
     border-radius: 10px;
     position: relative;
-
+    cursor: pointer;
+    border: none;
+    animation: slideOut 1.3s ease-out;
 }
+
+.seletor{
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    background: #18181B;
+    color: #71717A;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+
 
 .frase {
     display: flex;
@@ -199,7 +217,7 @@ p {
     border-radius: 4px;
   }
 
-  .container {
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -232,14 +250,32 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 55px;
+    gap: 60px;
     margin-top: 16px;
     font-size: 16px; 
+    margin-right: 15px;
 }
 
 .P p {
     color: white;
 }
+
+.dia {
+    margin-top: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #18181B;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.dia.clicked {
+    background: purple;
+}
+
 
   #scales {
     display: none; 
@@ -272,7 +308,7 @@ label {
 }
 
 #scales:checked + label .custom-checkbox {
-    background: #000; 
+    background: #000;
 }
 
 #scales:checked + label .custom-checkbox::before {
@@ -280,4 +316,55 @@ label {
     color: #34D399; 
 }
 
+.btn-cancelar-dou {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 16px;
 
+}
+
+.cancelar {
+    width: 108px;
+    height: 48px;
+    background: #71717A;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.encotrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 184px;
+    height: 48px;
+    background: #8B5CF6;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+span { 
+    display: block;
+    margin-left: 20px;
+}
+
+#frase {
+    padding-left: 16px; 
+}
+
+@keyframes slideOut {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  

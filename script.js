@@ -30,3 +30,40 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize
     updateSlider();
 });
+
+ function iniciaModal(modalID) {
+    const modal = document.getElementById(modalID);
+
+    if (modal) {
+      modal.style.display = "block";
+      modal.addEventListener('click', (e) => {
+        if (e.target.id == modalID || e.target.className == 'fechar') {
+          modal.style.display = "none";
+        }
+      });
+    }
+  }
+
+  const img = document.querySelector('.imagem');
+
+  img.addEventListener('click', function () {
+    iniciaModal('modalanuncio');
+  });
+
+  var modalAnuncio = document.getElementById("modalanuncio");
+  var btnAnuncio = document.getElementById("publiqueAnuncioBtn");
+  var spanAnuncio = document.getElementsByClassName("cancelar")[0];
+
+  btnAnuncio.onclick = function () {
+    iniciaModal('modalanuncio');
+  }
+
+  spanAnuncio.onclick = function () {
+    modalAnuncio.style.display = "none";
+  }
+
+  window.onclick = function (event) {
+    if (event.target == modalAnuncio) {
+      modalAnuncio.style.display = "none";
+    }
+  }
